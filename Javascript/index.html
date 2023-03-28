@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movies App</title>
+    <link rel="stylesheet" href="./public/css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"
+        defer></script>
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar bg-body-tertiary">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="https://getbootstrap.com/docs/5.3/assets/brand/bootstrap-logo.svg" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
+                Movies App
+            </a>
+            <form class="d-flex" role="search">
+                <input id="searchMoviesInput" class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-primary" type="submit" onclick="searchMovies()">Search</button>
+            </form>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main>
+        <div class="container">
+
+        <!-- Hero -->
+        <div id="featuredMovie" class="text-center bg-image rounded-3 mt-4">
+            <div class="mask rounded-3 h-100" style="background-color: rgba(0, 0, 0, 0.6);">
+                <div class="d-flex justify-content-center align-items-center h-100">
+                    <div class="text-white">
+                        <h1 id="featuredMovieTitle" class="mb-3"></h1>
+                        <p id="featuredMovieDesc" class="mb-3"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Hero -->
+
+        <!-- Movies -->
+        <div id="moviesContainer" class="row py-5"></div>
+
+        </div>
+        <!-- Movies -->
+    </main>
+
+    <!-- Footer -->
+    <footer id="appFooter" class="bg-light text-center text-lg-start">
+        <div class="text-center p-3">
+            <p id="footerText"></p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <script src="./public/scripts/index.js"></script>
+</body>
+
+</html>
